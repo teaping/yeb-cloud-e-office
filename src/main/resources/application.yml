@@ -1,0 +1,28 @@
+server:
+  port: 8081
+spring:
+  datasource:
+    druid:
+      username: root
+      password: root
+      url: jdbc:mysql://119.3.136.241/yeb?useUnicode=true&characterEncoding=utf-8&useSSL=false&tinyInt1isBit=false
+      driver-class-name: com.mysql.cj.jdbc.Driver
+  main:
+    allow-bean-definition-overriding: true
+
+# Mybatis
+mybatis:
+  type-aliases-package: com.ztwo.yeb.bean
+  mapper-locations: classpath:mappers/*Mapper.xml
+
+# JWT
+jwt:
+  header: Authorization
+  secret: yeb-secret
+  #token有效期一天
+  expiration: 604800
+  tokenHead: Bearer
+
+logging:
+  level:
+    com.ztwo.yeb.dao: debug

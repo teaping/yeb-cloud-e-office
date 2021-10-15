@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ztwo.yeb.dao.MailLogMapper">
+  <resultMap id="BaseResultMap" type="com.ztwo.yeb.bean.MailLog">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="msgId" jdbcType="VARCHAR" property="msgid" />
+    <result column="eid" jdbcType="INTEGER" property="eid" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+    <result column="routeKey" jdbcType="VARCHAR" property="routekey" />
+    <result column="exchange" jdbcType="VARCHAR" property="exchange" />
+    <result column="count" jdbcType="INTEGER" property="count" />
+    <result column="tryTime" jdbcType="TIMESTAMP" property="trytime" />
+    <result column="createTime" jdbcType="TIMESTAMP" property="createtime" />
+    <result column="updateTime" jdbcType="TIMESTAMP" property="updatetime" />
+  </resultMap>
+</mapper>
